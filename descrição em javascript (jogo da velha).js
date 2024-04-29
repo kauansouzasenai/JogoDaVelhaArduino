@@ -30,9 +30,9 @@
 
     velha = 1;
     do {
-       console.log(tabuleiro[0].ToString() + tabuleiro[1] + tabuleiro[2]);
-       console.log(tabuleiro[3].ToString() + tabuleiro[4] + tabuleiro[5]);
-       console.log(tabuleiro[6].ToString() + tabuleiro[7] + tabuleiro[8]);
+       console.log(tabuleiro[0].toString() + tabuleiro[1] + tabuleiro[2]);
+       console.log(tabuleiro[3].toString() + tabuleiro[4] + tabuleiro[5]);
+       console.log(tabuleiro[6].toString() + tabuleiro[7] + tabuleiro[8]);
         jogada = "";
        console.log("Digite a posição da peça Jogador " + jogadordavez);
         jogada = window.prompt('Enter a value for jogada');
@@ -75,9 +75,9 @@
     } else {
        console.log("velha");
     }
-   console.log(tabuleiro[0].ToString() + tabuleiro[1] + tabuleiro[2]);
-   console.log(tabuleiro[3].ToString() + tabuleiro[4] + tabuleiro[5]);
-   console.log(tabuleiro[6].ToString() + tabuleiro[7] + tabuleiro[8]);
+   console.log(tabuleiro[0].toString() + tabuleiro[1] + tabuleiro[2]);
+   console.log(tabuleiro[3].toString() + tabuleiro[4] + tabuleiro[5]);
+   console.log(tabuleiro[6].toString() + tabuleiro[7] + tabuleiro[8]);
 
     // Jogador venceu
 }

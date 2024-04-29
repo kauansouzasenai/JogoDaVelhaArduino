@@ -30,15 +30,15 @@
 
     velha = 1;
     do {
-        window.alert(tabuleiro[0].ToString() + tabuleiro[1] + tabuleiro[2]);
-        window.alert(tabuleiro[3].ToString() + tabuleiro[4] + tabuleiro[5]);
-        window.alert(tabuleiro[6].ToString() + tabuleiro[7] + tabuleiro[8]);
+       console.log(tabuleiro[0].ToString() + tabuleiro[1] + tabuleiro[2]);
+       console.log(tabuleiro[3].ToString() + tabuleiro[4] + tabuleiro[5]);
+       console.log(tabuleiro[6].ToString() + tabuleiro[7] + tabuleiro[8]);
         jogada = "";
-        window.alert("Digite a posição da peça Jogador " + jogadordavez);
+       console.log("Digite a posição da peça Jogador " + jogadordavez);
         jogada = window.prompt('Enter a value for jogada');
         linha = parseInt(jogada.charAt(0));
         coluna = parseInt(jogada.charAt(2));
-        window.alert("Linha" + linha + "; Coluna:" + coluna);
+       console.log("Linha" + linha + "; Coluna:" + coluna);
 
         // verificar se a posição for valida
         // converter a jogada texto em dois inteiros linha e coluna
@@ -65,19 +65,19 @@
             }
             velha = velha + 1;
         } else {
-            window.alert("posição ocupada jogue novamente !!!");
+           console.log("posição ocupada jogue novamente !!!");
 
             // informar ao jogador 1 que a posição esta preenchida e inválida e ele precisa informar uma posição válida
         }
     } while (!haVencedor && velha <= 9);
     if (haVencedor == true) {
-        window.alert("Jogador" + jogadordavez + " é o vencedor");
+       console.log("Jogador" + jogadordavez + " é o vencedor");
     } else {
-        window.alert("velha");
+       console.log("velha");
     }
-    window.alert(tabuleiro[0].ToString() + tabuleiro[1] + tabuleiro[2]);
-    window.alert(tabuleiro[3].ToString() + tabuleiro[4] + tabuleiro[5]);
-    window.alert(tabuleiro[6].ToString() + tabuleiro[7] + tabuleiro[8]);
+   console.log(tabuleiro[0].ToString() + tabuleiro[1] + tabuleiro[2]);
+   console.log(tabuleiro[3].ToString() + tabuleiro[4] + tabuleiro[5]);
+   console.log(tabuleiro[6].ToString() + tabuleiro[7] + tabuleiro[8]);
 
     // Jogador venceu
 }
@@ -86,7 +86,7 @@ function validaPosição(entrada) {
     var entradaValida;
 
     entradaValida = false;
-    window.alert(entrada.length());
+   console.log(entrada.length());
     if (entrada.length() == 3) {
         if (entrada.charAt(0) == "0" || entrada.charAt(0) == "1" || entrada.charAt(0) == "2") {
             if (entrada.charAt(2) == "0" || entrada.charAt(2) == "1" || entrada.charAt(2) == "2") {

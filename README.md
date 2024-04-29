@@ -1,3 +1,6 @@
+# autor: **Kauan vitor de souza**
+
+
 # briefing - jogo da velha
 
 **introdução:**
